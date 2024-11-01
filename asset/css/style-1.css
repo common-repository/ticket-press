@@ -1,0 +1,159 @@
+/*========================= 
+    Layout start
+==========================*/
+
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+.tp-tickets-wrapper a{
+  color: #1383B3; 
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.tp-tickets-wrapper  a, .tp-tickets-wrapper  a:hover, .tp-tickets-wrapper  a:focus{
+    outline: none;border: none;text-decoration: none;
+}
+.tp-tickets-wrapper  a:hover, .tp-tickets-wrapper  a:focus{
+    color: #000000;
+}
+
+.tp-tickets-wrapper{
+    color: #414141; 
+    font-size: 15px;
+    font-family: 'Tahoma';
+    font-style: normal;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+    overflow-x: auto;
+}
+
+.tp-tickets-wrapper table {
+  border-collapse: separate;
+  background: #f8f8f8; 
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 1.6em;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.tp-tickets-wrapper th,
+.tp-tickets-wrapper td {
+  border: 1px solid #eaeaea; /*fallback*/
+  border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.tp-tickets-wrapper td, .tp-tickets-wrapper th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left;
+  padding: 10px 15px;
+}
+
+.tp-tickets-wrapper tr:nth-of-type(odd) { 
+  background: #eeeeee; 
+}
+
+th { 
+  background: #167F92; 
+  color: white; 
+  font-weight: bold; 
+  border: none;
+  border-left: 1px solid #151515;
+}
+
+table thead tr th:first-child{
+  border-left: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  outline: 0;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #dddddd;
+  height: 50px;
+  color: #333333;
+  font-size: 16px;
+  line-height: normal;
+  color: #666666;
+  border: 1px solid #cccccc;
+  background-color: #fafafa; 
+  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+  padding: 8px 5px 8px 15px;
+}
+
+textarea{
+  min-height: 200px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  color: #212121;
+  background-color: #ffffff; 
+  -webkit-appearance: none;
+}
+
+button,
+input[type="submit"],
+button:focus,
+input[type="submit"]:focus {
+  border: none;
+  outline: none;
+  overflow: visible;
+  background: #167F92;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 11px 24px 12px;
+  cursor: pointer;
+  vertical-align: middle;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+button:hover,
+input[type="submit"]:hover{
+  background-color: #313131;
+}
+
+.wp-editor-wrap button:hover{
+  background-color: inherit;
+}
+
+/*single page style*/
+
+.tp-tickets-wrapper h2.entry-title{
+  color: #167F92;
+}
+
+.ticket-status > span{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tp-alert-error ul{
+  padding-left: 0;
+}
+.tp-alert-error li{
+  list-style: none;
+  color: red;
+}
